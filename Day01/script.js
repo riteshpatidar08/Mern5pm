@@ -14,7 +14,7 @@ console.log('we are learning js') ;
 
 //NOTE String 
 
-let company = 'grras' ;
+let company = 'grras'  ;
 
 //we to have to check weather it is string , number or any other datatypes 
 
@@ -86,6 +86,39 @@ console.log(address) ;
 
 var address = 'udaipur' ;
 console.log(address)
+
+
+
+//Non primitive array and object ;
+
+//TODO type conversion and coersion ;
+
+//NOTE coersion ;
+
+console.log(true + 1)
+ 
+let str = +'5' ;
+
+console.log(typeof str , str)
+
+//NOTE conversion 
+let raining = 'true' ;
+console.log(typeof Boolean(raining))
+//dynamically typed js 
+
+//static types java c++ ;
+
+
+//TODO null and undefined , typeof null , typeconversion and coersion , let const var difference on the basis of reassign and redeclaration
+
+
+
+
+
+
+
+
+
 
 
 
