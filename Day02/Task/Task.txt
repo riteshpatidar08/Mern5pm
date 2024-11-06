@@ -1,0 +1,48 @@
+//NOTE you have to make a script.js file and do all the task in that file.
+
+TASK 1 :
+User Interactions (Alert, Confirm, Prompt)
+
+Use alert to greet the user.
+Ask the user if they want to enter their information via confirm.
+If they confirm, use prompt to get their age and log a message based on the input.
+
+TASK 2 : Functions
+
+Write a declared function calculateArea that takes the radius and returns the area of a circle.
+Test "hoisting" by logging the function call before its declaration.
+
+TASK 3 : 
+ Non-Primitives (Array and Object)
+
+Create an object student with properties like name, age, and an array courses containing the subjects they study.
+Use both dot notation and bracket notation to access and modify properties.
+
+TASK 4: 
+Global Object and Window Methods :
+
+Try logging the window object and see what properties are available.
+Use prompt to take user input for the student’s name and add it to the student object created in Task 3.
+
+Task 5 : 
+Truthy and Falsy Values
+
+Write a function checkValue that takes an input and prints whether it's truthy or falsy.
+Test it with different values like an empty string, 0, NaN, a non-empty string, and numbers other than zero.
+
+Task 6 : 
+Determine Access Level Based on User Role and Age
+Create a program that grants different access levels to users based on their role and age.
+
+Prompt the user for their role (can be "admin", "editor", "viewer").
+Prompt the user for their age.
+Use nested if-else statements to determine the access level:
+If the role is "admin", grant "full access" if the age is 18 or above. Otherwise, deny access.
+If the role is "editor", grant "edit access" if the age is 18 or above; if not, grant "limited access."
+If the role is "viewer", only grant "view access" regardless of age.
+For any other role, deny access.
+Afterward, convert this logic into a switch statement.
+
+Task 7 : 
+
+After completing all the above task  ,you have to create a remote repo on the github then you have to push the script.js file on the github..
