@@ -67,7 +67,7 @@ let animal = 'cat' ;
 
 animal = 'dog' ;
 
-// let animal = 'lion'
+// let animal = 'lion' ❌
 
 //NOTE const 
 //NOTE REASSIGN❌  AND REDECLARATION ❌ 
@@ -81,10 +81,10 @@ animal = 'dog' ;
 //NOTE REASSIGN ✅ AND REDECLARATION✅ ;
 
 var address = 'jaipur';
-address = 'kota' ;
+// address = 'kota' ;   ✅
 console.log(address) ;
 
-var address = 'udaipur' ;
+// var address = 'udaipur' ; ✅
 console.log(address)
 
 
@@ -109,8 +109,7 @@ console.log(typeof Boolean(raining))
 //static types java c++ ;
 
 
-//TODO null and undefined , typeof null , typeconversion and coersion , let const var difference on the basis of reassign and redeclaration
-
+//TODO null and undefined , typeof null , typeconversion and coersion , let const var difference on the basis of reassign and redeclaration.
 
 
 
