@@ -46,7 +46,49 @@ function getDirector(year) {
 }
  
 
+console.log(getDirector(2012));
+
 //for in 
 
 
-console.log(getDirector(2012));
+for(let index in companies){
+    console.log(companies[index])
+}
+
+
+// const obj = {
+//     firstName : 'ritesh',
+//     age : 25 
+// }
+
+// for(let keys in obj){
+//     console.log(`${keys} : ${obj[keys]}`)
+// }
+
+
+// do while
+// let count = 1 
+// do{
+// console.log(count) ;
+// count++
+
+// }while(count <= 5);
+
+let confirmPassword = 'ritesh@123' ;
+let password ;
+
+
+do{
+password = prompt('enter the password') ;
+if(confirmPassword !== password){
+    alert('Invalid password please enter again')
+
+}
+}while(confirmPassword !== password);
+
+alert('login successfull') ;
+
+
+//prompt => 1.hi ,2. bye  , 3.leave 
+// => switch case case 1,2,3 console.log(bye) console.log(hi);
+
