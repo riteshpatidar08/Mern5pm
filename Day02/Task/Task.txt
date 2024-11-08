@@ -22,6 +22,7 @@ TASK 4:
 Global Object and Window Methods :
 
 Try logging the window object and see what properties are available.
+
 Use prompt to take user input for the student’s name and add it to the student object created in Task 3.
 
 Task 5 : 
@@ -36,7 +37,9 @@ Create a program that grants different access levels to users based on their rol
 
 Prompt the user for their role (can be "admin", "editor", "viewer").
 Prompt the user for their age.
+
 Use nested if-else statements to determine the access level:
+
 If the role is "admin", grant "full access" if the age is 18 or above. Otherwise, deny access.
 If the role is "editor", grant "edit access" if the age is 18 or above; if not, grant "limited access."
 If the role is "viewer", only grant "view access" regardless of age.
