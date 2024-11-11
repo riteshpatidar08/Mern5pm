@@ -125,7 +125,7 @@ const indexOutput = newwProduct.findIndex((item)=>{
 return item === 'ac'
 })
 
-console.log(indexOutput)
+
 
 
 // for(let i = 0 ; i < newwProduct.length ; i++){
@@ -135,10 +135,41 @@ console.log(indexOutput)
 // }
 
 
+const movies = ['intersteller','spiderman','batman'] ;
+
+const newMovie = 'black panther'
+if(!movies.includes(newMovie)){
+    movies.push(newMovie)
+}
+
+if(movies.length > 5){
+    movies.pop()
+}
+
+const arr = [1,2,3,4,5] ;
+console.log(arr)
+const splicedOutputt = arr.splice(1) ;
+console.log(splicedOutput);
 
 
 
+//NOTE indexOf 
 
+const usernames = [
+]
+
+//NOTE at 
+//NOTE concat
+//NOTE join
+//NOTE FOREACH
+//NOTE map
+//NOTE filter
+//NOTE find
+//NOTE reduce
+//NOTE some 
+//NOTE every.
+//NOTE sort.
+//NOTE reverse.
 
 
 
