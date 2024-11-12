@@ -56,14 +56,14 @@ const names = [
 //NOTE filter (higher order method)
 
 const product = [
-  { name: 'tv', price: 2000 , quantity : 2},
-  { name: 'mobile', price: 10000 , quantity : 3 },
-  { name: 'ac', price: 6000 , quantity : 3 },
+  { name: 'tv', price: 300 , quantity : 2},
+  { name: 'mobile', price: 300 , quantity : 3 },
+  { name: 'ac', price: 300 , quantity : 3 },
 ];
 
 const filteredOutput = product.filter((item)=>{
     console.log(item)
-return  item.price > 5000 ;
+return  item.price >= 5000 ;
 })
 
 console.log(filteredOutput) ;
@@ -87,15 +87,12 @@ const reducedOutput = num.reduce((accumulator,currentItem)=>{
     console.log(accumulator , currentItem)
     return accumulator + currentItem
 },0)
-console.log(reducedOutput) ;
+console.log(reducedOutput) ; 
+
 
 const cartPrice = product.reduce((accumulator,currentItem)=>{
     console.log(accumulator,currentItem)
 return  accumulator + (currentItem.price * currentItem.quantity)
 },0) 
-console.log(cartPrice)
+console.log(cartPrice) ;
 
-//NOTE some
-//NOTE every.
-//NOTE sort.
-//NOTE reverse.
