@@ -1,6 +1,6 @@
 
 
-//OBJECT METHODS :
+//OBJECT METHODS :(13/11/2024)
 
 
 const details = {

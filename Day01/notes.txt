@@ -1,0 +1,101 @@
+//SECTION - Introduction to JavaScript Data Types
+In JavaScript, data types are categories of values that determine how they can be used and manipulated. JavaScript data types are divided into two main categories:
+
+//SECTION - Primitive Data Types: Basic types that represent a single value.
+
+String: Represents text data. Example: "Hello", 'JavaScript'.
+Number: Represents both integer and floating-point numbers. Example: 42, 3.14.
+Boolean: Represents a logical value: true or false.
+Null: Represents an intentional absence of value. It is a special value that means "nothing."
+Undefined: Indicates a variable has been declared but has not been assigned a value.
+Symbol: A unique and immutable primitive value, often used as object keys.
+BigInt: Allows representation of numbers larger than the Number type can hold.
+
+
+//SECTION - Non-Primitive Data Types:
+
+Object: Collections of key-value pairs. Objects can hold multiple values and are mutable. Example:
+
+const person = {
+  name: "Alice",
+  age: 25,
+};
+
+
+//SECTION - Null vs. Undefined
+
+Null: Used when a variable is intentionally set to "no value."
+let x = null;
+
+
+Undefined: A variable without an assigned value automatically has the undefined type.
+
+let y;
+console.log(y); // undefined
+
+
+//SECTION -  Truthy and Falsy Values
+
+
+In JavaScript, some values are inherently truthy or falsy:
+
+Falsy Values: Values that evaluate to false in conditional statements:
+
+false
+0 (the number zero)
+"" or '' (empty strings)
+null
+undefined
+NaN (Not-a-Number)
+
+
+Truthy Values: All other values are considered "truthy" and evaluate to true in conditions. Examples include non-empty strings ("Hello"), non-zero numbers (42), objects, and arrays.
+
+
+//SECTION -  Conditional Statements with Truthy and Falsy
+
+Conditional statements check whether values are truthy or falsy:
+
+let value = ""; // Empty string, which is falsy
+if (value) {
+  console.log("This is truthy!");
+} else {
+  console.log("This is falsy!"); // Output: "This is falsy!"
+}
+Using truthy/falsy checks can be helpful for writing concise code, especially in default value assignments and conditionals.
+
+
+
+//SECTION -  Type Conversion and Coercion
+JavaScript often converts data types automatically, but this can sometimes lead to unexpected behavior. Type conversion and type coercion are mechanisms for converting data types.
+
+Type Conversion (Explicit Conversion): Converting a value from one type to another explicitly, using functions like String(), Number(), or Boolean().
+
+Examples:
+
+
+const num = 42;
+const strNum = String(num); // Converts number to string: "42"
+const boolNum = Boolean(num); // Converts number to boolean: true
+Type Coercion (Implicit Conversion): JavaScript automatically converts types in certain operations, which can sometimes produce unexpected results.
+
+Examples:
+
+String Coercion: When a number is added to a string, JavaScript coerces the number to a string and concatenates.
+
+console.log("The answer is " + 42); // Output: "The answer is 42"
+
+Number Coercion: When a string is used in a mathematical operation with a number (other than +), JavaScript coerces the string to a number.
+
+
+console.log("10" - 2); // Output: 8
+console.log("10" * 2); // Output: 20
+
+
+Boolean Coercion: Non-boolean values are coerced into booleans in conditional checks. 0, "", null, undefined, and NaN become false; all other values become true.
+
+if ("") {
+  console.log("Truthy!");
+} else {
+  console.log("Falsy!"); // Output: "Falsy!"
+}

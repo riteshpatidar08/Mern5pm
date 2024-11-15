@@ -1,0 +1,84 @@
+
+//SECTION - Introduction to Objects in JavaScript
+
+In JavaScript, objects are collections of key-value pairs where each key (also called a property) maps to a specific value. Objects allow for the storage and organization of complex data. They are often used to represent real-world entities like people, products, and configurations.
+
+//SECTION - Creating an Object
+Objects can be created using curly braces {} with key-value pairs:
+
+
+const person = {
+  name: "Alice",
+  age: 25,
+  job: "Engineer"
+};
+
+In this example, name, age, and job are properties of the person object, and "Alice", 25, and "Engineer" are their values.
+
+//SECTION - Accessing Object Values
+There are two main ways to access values in an object:
+
+Dot Notation: Access properties using a dot (.) followed by the property name.
+Bracket Notation: Access properties using square brackets ([]) with the property name as a string.
+Dot Notation
+Syntax: objectName.propertyName
+
+Example:
+
+console.log(person.name); // Output: "Alice"
+console.log(person.age);  // Output: 25
+
+//SECTION Usage: Dot notation is simple and commonly used when the property name is a valid identifier (e.g., no spaces or special characters). It’s more readable and preferred when the property names are fixed.
+
+Bracket Notation
+Syntax: objectName["propertyName"]
+
+Example:
+
+console.log(person["name"]); // Output: "Alice"
+console.log(person["age"]);  // Output: 25
+Usage: Bracket notation is useful when:
+
+The property name is stored in a variable.
+The property name includes spaces, special characters, or numbers that make it an invalid identifier for dot notation.
+Example with a variable:
+
+
+const propName = "job";
+console.log(person[propName]); // Output: "Engineer"
+
+
+//TODO Differences Between Dot Notation and Bracket Notation
+DOT NOTATION	            |   BRACKET NOTATION
+Simpler and more readable | 	More flexible for dynamic properties
+Requires valid identifier	|   Allows any string as a property name
+Cannot use variables	    |   Can use variables for property names
+
+
+
+
+//SECTION - WHEN TO USE WHEN 
+Dot Notation: Use when accessing known, valid identifiers that don’t include spaces or special characters. It’s the preferred notation for readability.
+
+
+Bracket Notation: Use when:
+The property name is stored in a variable.
+The property name includes special characters or spaces.
+
+You need to compute or dynamically determine the property name at runtime.
+
+
+const car = {
+  "make": "Toyota",
+  "model": "Camry",
+  "year": 2022,
+  "engine type": "V6"  
+};
+
+
+console.log(car.make);          // Dot notation - Output: "Toyota"
+console.log(car["engine type"]); // Bracket notation - Output: "V6"
+
+// Using a variable to access a property
+const prop = "model";
+console.log(car[prop]);          // Bracket notation - Output: "Camry"

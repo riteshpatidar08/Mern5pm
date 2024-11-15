@@ -1,0 +1,47 @@
+
+
+JavaScript Functions
+
+
+//SECTION - Function Declaration
+A function declaration defines a function with a specified name. It is hoisted, meaning it can be called before it’s defined in the code.
+
+function sum(a, b) {
+  return a + b;
+}
+
+
+
+//SECTION - Function Expression
+A function expression assigns a function to a variable. It is not hoisted, so it can only be used after it is defined.
+
+const sum = function (a, b) {
+  return a + b;
+};
+console.log(sum(3, 4)); // Output: 7
+
+
+
+
+//SECTION - Arrow Functions
+Arrow functions provide a concise syntax for writing functions. They are always anonymous and can be single-line or multi-line.
+
+
+//SECTION Single-line Arrow Function:
+
+Implicitly returns the result without using the return keyword.
+
+const subtraction = (a, b) => a - b;
+console.log(subtraction(5, 3)); // Output: 2
+
+
+
+//SECTION Multi-line Arrow Function:
+
+Use curly braces {} and return for multi-line functions.
+
+const multiply = (a) => {
+  const result = a * 5;
+  return result;
+};
+console.log(multiply(4)); // Output: 20
