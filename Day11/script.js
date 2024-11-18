@@ -1,3 +1,4 @@
+//NOTE TOPICS COVERED 
 //datatypes
 //type conversion and coersion
 //if else 
@@ -10,6 +11,8 @@
 //string methods
 //destructuring 
 //spread operator
+//math object
+//date object..
 
 
 //NOTE MATH OBJECT 
@@ -19,9 +22,10 @@ console.log(Math.abs(-7)) ;
 
 //NOTE Math.round 
 console.log(Math.round(2.4))
-
+//.1 =>  .4 2.1 => 2.4 => downwords 2
+//.5 => .9 => 2.6 => 3 upwards
 //NOTE Math.trunc
-console.log(Math.trunc(3.26))
+console.log(Math.trunc(3.76))
 
 //NOTE Math.floor (round off the value to downword)
 console.log(Math.floor(-4.6)) ;
@@ -94,5 +98,7 @@ function playDice(){
 }
 
 playDice() ;
+ 
+
 
 
