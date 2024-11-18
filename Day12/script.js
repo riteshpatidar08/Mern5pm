@@ -1,3 +1,5 @@
+'use strict'
+
 //Date object => inbuilt object
 
 // console.log(Math.floor(-4.2)) -5
@@ -108,3 +110,12 @@ console.log(gadget.fullDetails())
 // }
 
 // console.log(days)
+
+firstName = 'ritesh' ;
+console.log(firstName)
+
+function sum(a,a){
+    return a+a
+} ;
+
+console.log(sum(3,4)) ; 
