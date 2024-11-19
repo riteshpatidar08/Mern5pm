@@ -112,10 +112,12 @@ console.log(gadget.fullDetails())
 // console.log(days)
 
 firstName = 'ritesh' ;
-console.log(firstName)
+console.log(firstName) ;
 
 function sum(a,a){
     return a+a
 } ;
 
 console.log(sum(3,4)) ; 
+
+

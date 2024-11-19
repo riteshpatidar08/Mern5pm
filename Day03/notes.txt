@@ -1,6 +1,6 @@
 
 
-JavaScript Functions
+//Section JavaScript-Functions
 
 
 //SECTION - Function Declaration
@@ -23,8 +23,10 @@ console.log(sum(3, 4)); // Output: 7
 
 
 
-//SECTION - Arrow Functions
+//SECTION - Arrow Functions 
 Arrow functions provide a concise syntax for writing functions. They are always anonymous and can be single-line or multi-line.
+
+
 
 
 //SECTION Single-line Arrow Function:
