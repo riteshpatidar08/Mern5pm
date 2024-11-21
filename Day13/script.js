@@ -38,7 +38,15 @@
 //1 .getElementsByTagName 
 
 const h1 = document.getElementsByTagName('h1')
-console.log(h1) ;
+console.log(h1) ; 
+
+console.log(h1[1]) ;
+
+// h1.forEach((e)=>{
+//     console.log(e)
+// })
+
+//NOTE  we cannot loop html-collection directly using forEach
 
 //2. getElementsByClassName :
 
@@ -52,16 +60,23 @@ console.log(newHeading) ;
 
 //4 querySelector : 
 
-
 const span = document.querySelector('.text')
 console.log(span)
 
-
 //5 querySelectorAll  :
+
 const allEl = document.querySelectorAll('.text')
-console.log(allEl)
+console.log('queryselectorAll' ,allEl) ;
 
 
+allEl.forEach((el)=>{
+console.log(el)
+})
+
+//Nodelist ko main directly using forEach loop krskta 
+
+// HTMLCOLLECTION                     |      NodeList
+//1. cannot loop using forEach             1. we can loop nodelist using forEach
 
 
 
