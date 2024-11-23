@@ -72,7 +72,7 @@ console.dir(btn);
 
 const output = document.getElementById('output');
 
-//MOUSE EVENTS
+//NOTE MOUSE EVENTS
 btn.addEventListener('click', function () {
   output.textContent = 'Click happens';
 });
@@ -83,11 +83,12 @@ btn.addEventListener('dblclick', function () {
 btn.addEventListener('mouseenter', function () {
   output.textContent = 'mouse enter happens';
 });
+
 btn.addEventListener('mouseout', function () {
   output.textContent = 'mouse out happens';
 });
 
-//input events
+//NOTE input events
 const input = document.getElementById('input');
 
 input.addEventListener('focus', function () {
@@ -98,10 +99,58 @@ input.addEventListener('focus', function () {
 input.addEventListener('blur', function () {
   output.textContent = 'input focused';
   input.style.borderColor = 'red';
+  
 });
-
 
 input.addEventListener('input', (event) => {
-  console.log(event.target.value);
-  output.textContent = 'input changed';
+const value = event.target.value ;
+  output.textContent = `input updated ${value}`
 });
+
+
+input.addEventListener('change', (event) => {
+const value = event.target.value ;
+  output.textContent = `input changed ${value}`
+});
+
+
+//window
+
+window.addEventListener('resize',()=>{
+    console.log('window resized')
+    console.log(window.innerHeight)
+console.log(window.innerWidth)
+})
+
+
+//keyboard 
+
+//keyup and keydown
+
+document.body.addEventListener('keyup',(event)=>{
+    console.log(event)
+    output.textContent = `keyup ${event.key}`
+})
+
+document.body.addEventListener('keydown',(event)=>{
+    console.log(event)
+    output.textContent = `keydown ${event.key}`
+})
+
+
+//form submit
+const form = document.getElementById('form');
+
+form.addEventListener('submit',(event)=>{
+    event.preventDefault() ;
+   console.log(input.value) 
+})
+
+
+//NOTE imp submit , click , change , input , focus 
+
+
+
+
+
+
