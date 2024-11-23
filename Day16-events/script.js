@@ -141,13 +141,16 @@ document.body.addEventListener('keydown',(event)=>{
 //form submit
 const form = document.getElementById('form');
 
+const check = document.getElementById('check') ;
+console.dir(check)
 form.addEventListener('submit',(event)=>{
     event.preventDefault() ;
-   console.log(input.value) 
+   console.log(input.value)
+   console.log(check.checked) 
 })
 
 
-//NOTE imp submit , click , change , input , focus 
+//NOTE imp  submit , click , change , input , focus 
 
 
 
