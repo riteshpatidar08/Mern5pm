@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin : 0 ;
+            padding : 0 ;
+            box-sizing: border-box;
+        }
+        .card {
+            width: 300px;
+            box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+            padding : 20px ;
+            border-radius: 4px;
+        }
+
+        .card img{
+            width : 100%
+        }
+
+        .card h2{
+            margin : 10px 0px 8px
+        }
+
+        .card p {
+            margin : 4px
+        }
+
+        .card button{
+            padding: 10px 30px ;
+            background-color: #005bff;
+            border: none;
+            border-radius: 3px;
+            color :white
+        }
+        #list{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="card_container">
+    </div> -->
+
+    <ul id="list">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+
+    <button >click</button>
+<input onblur="alert('focus removed')" type="text" />
+    <script src="./script.js"></script>
+</body>
+</html>
