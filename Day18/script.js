@@ -39,8 +39,12 @@ function fetchCountry(url) {
   });
 }
 
+
 fetchCountry('www.myapi.com')
   .then((data) => {
     console.log(data);
   })
   .catch((err) => console.log(err));
+
+
+
