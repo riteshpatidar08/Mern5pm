@@ -42,5 +42,8 @@ async function fetchStarWars() {
   console.log(data);
 }
 
-fetchStarWars(); 
+fetchStarWars();
+
+
+//Clock 
 
