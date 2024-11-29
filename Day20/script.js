@@ -88,6 +88,7 @@ const train2 = {
 
 const newBook = train.book;
 newBook.call(train2, 'ritesh', 31423);
+
 train.book('ritesh', 12343);
 
 const h1 = document.getElementById('heading');
@@ -98,8 +99,8 @@ h1.addEventListener('click', function () {
 
 //binding
 
-function printName() {
-  console.log(this.firstName);
+function printName(a) {
+  console.log(this.firstName, a);
 }
 
 printName();
@@ -111,6 +112,40 @@ const Person = {
 //call function method we can use to chnage the behaviour of the this keyword in my program
 
 //Call method
-printName.call(Person); 
+// printName.call(Person,5);
+
+// call , apply and bind
+// printName.apply(Person,[5])
+
+//bind
+console.log(printName.bind(Person, 5));
+const bindFn = printName.bind(Person, 5);
+bindFn();
+
+function printAddress(state) {
+  console.log(
+    `my name is ${this.firstName} i am from ${this.city} which is located in ${state}`
+  );
+}
+
+//NOTE apply
+//NOTE call
+//NOTE bind
+
+//NOTE closures
+
+function printVariable() {
+  let count = 0;
+
+  return function () {
+    console.log(count++);
+  };
+}
+
+const newFn = printVariable();
+
+// newFn() ;
+
+//NOTE HOISTING : 
 
 
