@@ -98,7 +98,6 @@ h1.addEventListener('click', function () {
 });
 
 //binding
-
 function printName(a) {
   console.log(this.firstName, a);
 }
